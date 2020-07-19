@@ -30,9 +30,19 @@ public class NewMain {
         
         NewCar opel = new NewCar("Opel", 2002, "blue", 200, 1300, 7, 150000);
         opel.printAttributes();
-        opel.goToTravel(200);
+        
+        //prvo putovanje
+        opel.setMaxFuel(40);
+        opel.setFuel(0);
+        opel.setConsumption(10);
+        opel.FuelUp(29);
+        opel.FuelUp(21);
+        opel.goToTravel(300);
         opel.printAttributes();
-        opel.goToTravel(400);
+        
+        //drugo putovanje
+        
+        opel.goToTravel(50);
         opel.printAttributes();
     }
     
