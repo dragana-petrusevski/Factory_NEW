@@ -7,23 +7,33 @@ public class NewMain {
     public static void main(String[] args) {
         System.out.println("Pocetak");
         
-        NewCar auto1 = new NewCar();
-        auto1.model = "Audi";
-        auto1.buldYear = 2003;
-        auto1.ccm = 2000;
+        NewCar audi8 = new NewCar();
+        audi8.printAttributes();
         
-        System.out.println("Model automobila 1 je " + auto1.model);
+        audi8.setModel("Audi broj 8");
+        audi8.setBuildYear(2003);
+        audi8.setCcm(2000);
         
-        
-        
-        NewCar auto2 = new NewCar();
-        auto2.model = "Fiat";
-        auto2.buldYear = 2019;
-        
-        System.out.println("Model automobila 2 je " + auto2.model);
+        audi8.printAttributes();
         
         
+        NewCar fiatPunto = new NewCar();
+        fiatPunto.setModel("Fiat");
+        fiatPunto.setBuildYear(2019);
         
+        fiatPunto.printAttributes();
+        
+        NewCar lada = new NewCar("Lada Niva", 1900, "green", 120, 50);
+        lada.setMileage(50);
+        lada.goToTravel(100);
+        lada.printAttributes();
+        
+        NewCar opel = new NewCar("Opel", 2002, "blue", 200, 1300, 7, 150000);
+        opel.printAttributes();
+        opel.goToTravel(200);
+        opel.printAttributes();
+        opel.goToTravel(400);
+        opel.printAttributes();
     }
     
 }
